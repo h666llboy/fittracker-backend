@@ -18,7 +18,7 @@ app = FastAPI(title="FitTracker API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Разрешаем все origins для тестирования
+    allow_origins=["https://fittracker-frontend-1.onrender.com"],  # Разрешаем все origins для тестирования
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

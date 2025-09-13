@@ -69,7 +69,7 @@ class FinishedWorkout(BaseModel):
 app = FastAPI(title="FitTracker API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=["https://fittracker-frontend-seven.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
